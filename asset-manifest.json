@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/adamappsdev/how-long-to-read-it-/static/css/main.f2f19d78.chunk.css",
-    "main.js": "/adamappsdev/how-long-to-read-it-/static/js/main.409a6da3.chunk.js",
-    "main.js.map": "/adamappsdev/how-long-to-read-it-/static/js/main.409a6da3.chunk.js.map",
-    "runtime-main.js": "/adamappsdev/how-long-to-read-it-/static/js/runtime-main.257e43a1.js",
-    "runtime-main.js.map": "/adamappsdev/how-long-to-read-it-/static/js/runtime-main.257e43a1.js.map",
-    "static/js/2.a83d5800.chunk.js": "/adamappsdev/how-long-to-read-it-/static/js/2.a83d5800.chunk.js",
-    "static/js/2.a83d5800.chunk.js.map": "/adamappsdev/how-long-to-read-it-/static/js/2.a83d5800.chunk.js.map",
-    "index.html": "/adamappsdev/how-long-to-read-it-/index.html",
-    "precache-manifest.247887d462cd4f04b37a4b357fdfdfd0.js": "/adamappsdev/how-long-to-read-it-/precache-manifest.247887d462cd4f04b37a4b357fdfdfd0.js",
-    "service-worker.js": "/adamappsdev/how-long-to-read-it-/service-worker.js",
-    "static/css/main.f2f19d78.chunk.css.map": "/adamappsdev/how-long-to-read-it-/static/css/main.f2f19d78.chunk.css.map",
-    "static/js/2.a83d5800.chunk.js.LICENSE.txt": "/adamappsdev/how-long-to-read-it-/static/js/2.a83d5800.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/adamappsdev/how-long-to-read-it-/static/media/background.70ab6863.jpg"
+    "main.css": "/how-long-to-read-it-/static/css/main.1661aa04.chunk.css",
+    "main.js": "/how-long-to-read-it-/static/js/main.44ea31b1.chunk.js",
+    "main.js.map": "/how-long-to-read-it-/static/js/main.44ea31b1.chunk.js.map",
+    "runtime-main.js": "/how-long-to-read-it-/static/js/runtime-main.36be3476.js",
+    "runtime-main.js.map": "/how-long-to-read-it-/static/js/runtime-main.36be3476.js.map",
+    "static/js/2.a83d5800.chunk.js": "/how-long-to-read-it-/static/js/2.a83d5800.chunk.js",
+    "static/js/2.a83d5800.chunk.js.map": "/how-long-to-read-it-/static/js/2.a83d5800.chunk.js.map",
+    "index.html": "/how-long-to-read-it-/index.html",
+    "precache-manifest.0653d611f9f965cc9108d3ca63b0d1bd.js": "/how-long-to-read-it-/precache-manifest.0653d611f9f965cc9108d3ca63b0d1bd.js",
+    "service-worker.js": "/how-long-to-read-it-/service-worker.js",
+    "static/css/main.1661aa04.chunk.css.map": "/how-long-to-read-it-/static/css/main.1661aa04.chunk.css.map",
+    "static/js/2.a83d5800.chunk.js.LICENSE.txt": "/how-long-to-read-it-/static/js/2.a83d5800.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/how-long-to-read-it-/static/media/background.70ab6863.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.257e43a1.js",
+    "static/js/runtime-main.36be3476.js",
     "static/js/2.a83d5800.chunk.js",
-    "static/css/main.f2f19d78.chunk.css",
-    "static/js/main.409a6da3.chunk.js"
+    "static/css/main.1661aa04.chunk.css",
+    "static/js/main.44ea31b1.chunk.js"
   ]
 }
