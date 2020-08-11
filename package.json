@@ -2,6 +2,7 @@
   "name": "how-long-to-read-it",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/adamappsdev/how-long-to-read-it-",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -12,6 +13,8 @@
     "react-transition-group": "^4.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
