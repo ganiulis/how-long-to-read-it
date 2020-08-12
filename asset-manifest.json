@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/how-long-to-read-it-/static/css/main.1661aa04.chunk.css",
-    "main.js": "/how-long-to-read-it-/static/js/main.44ea31b1.chunk.js",
-    "main.js.map": "/how-long-to-read-it-/static/js/main.44ea31b1.chunk.js.map",
+    "main.css": "/how-long-to-read-it-/static/css/main.6cb9ed94.chunk.css",
+    "main.js": "/how-long-to-read-it-/static/js/main.12d014aa.chunk.js",
+    "main.js.map": "/how-long-to-read-it-/static/js/main.12d014aa.chunk.js.map",
     "runtime-main.js": "/how-long-to-read-it-/static/js/runtime-main.36be3476.js",
     "runtime-main.js.map": "/how-long-to-read-it-/static/js/runtime-main.36be3476.js.map",
-    "static/js/2.a83d5800.chunk.js": "/how-long-to-read-it-/static/js/2.a83d5800.chunk.js",
-    "static/js/2.a83d5800.chunk.js.map": "/how-long-to-read-it-/static/js/2.a83d5800.chunk.js.map",
+    "static/js/2.b461b11b.chunk.js": "/how-long-to-read-it-/static/js/2.b461b11b.chunk.js",
+    "static/js/2.b461b11b.chunk.js.map": "/how-long-to-read-it-/static/js/2.b461b11b.chunk.js.map",
     "index.html": "/how-long-to-read-it-/index.html",
-    "precache-manifest.0653d611f9f965cc9108d3ca63b0d1bd.js": "/how-long-to-read-it-/precache-manifest.0653d611f9f965cc9108d3ca63b0d1bd.js",
+    "precache-manifest.ea0d88198a77dfce26d1fc26992165b1.js": "/how-long-to-read-it-/precache-manifest.ea0d88198a77dfce26d1fc26992165b1.js",
     "service-worker.js": "/how-long-to-read-it-/service-worker.js",
-    "static/css/main.1661aa04.chunk.css.map": "/how-long-to-read-it-/static/css/main.1661aa04.chunk.css.map",
-    "static/js/2.a83d5800.chunk.js.LICENSE.txt": "/how-long-to-read-it-/static/js/2.a83d5800.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/how-long-to-read-it-/static/media/background.70ab6863.jpg"
+    "static/css/main.6cb9ed94.chunk.css.map": "/how-long-to-read-it-/static/css/main.6cb9ed94.chunk.css.map",
+    "static/js/2.b461b11b.chunk.js.LICENSE.txt": "/how-long-to-read-it-/static/js/2.b461b11b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/how-long-to-read-it-/static/media/background.bcadcf1e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.36be3476.js",
-    "static/js/2.a83d5800.chunk.js",
-    "static/css/main.1661aa04.chunk.css",
-    "static/js/main.44ea31b1.chunk.js"
+    "static/js/2.b461b11b.chunk.js",
+    "static/css/main.6cb9ed94.chunk.css",
+    "static/js/main.12d014aa.chunk.js"
   ]
 }
