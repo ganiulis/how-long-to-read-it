@@ -1,3 +1,9 @@
+$sidebar-color: #4D4755;
+$text-color: white;
+$collapsible-text-color: #4D4755;
+$collapsible-color: #D7AC96;
+$button-color: green;
+
 body, html {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,102 +11,162 @@ body, html {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: navy;
     height: 100%;
     width: 100%;
-    color: white;
+    color: $text-color;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100%;
+}
+
+button, #submit {
+    background-color: $button-color;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: $text-color;
+    width: 200px;
+    &:hover {
+        background-color: gold;
+        color: $collapsible-text-color
+    }
+}
+
+form {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba($collapsible-color, 0.2);
+    border-radius: 0 10px 0 10px;
+    padding-bottom: 50px;
+    font-size: 1.1em;
+    hr {
+        border-top: 2px solid white;
+        border-bottom: 0;
+    }
+    #pages, #time {
+        width: 100%;
+    }
+}
+
+#submit {
+    position: absolute;
+    right: 20px;
+    margin: 10px;
+}
+
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-$padding: 2%;
-$width: 100%;
-$height: 720px;
-$background-color: rgba(grey, 0.8);
-$border-color: white;
-
-#root {
+.background-div {
+    position: fixed;
     height: 100%;
-    width: 100%;
+    width: 75%;
     background-image: url("images/background.jpg");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 }
 
-.container {
-    margin: auto;
-    width: $width;
-    height: $height;
-    padding-top: $padding;
+.header {
+    padding: 10px 0;
+    padding-left: 20px;
+    color: white;
 }
 
-.title {
-    text-align: center;
-    background-color:$background-color;
-    padding: 0 $padding;
-    h1 {
-        margin-top: 0;
-    }
+.header h1 {
+    margin: 0;
 }
-
-
-$margin-inner: $padding / 2;
-$margin-outer: $padding;
 
 .sidebar {
-    display: relative;
-    float: left;
-    width: ($width / 2) - ($padding * 3 / 2);
-    margin-left: $margin-outer;
-    margin-right: $margin-inner;
-    margin-bottom: $padding;
-}
-
-.main {
-    display: relative;
-    float: left;
-    width: ($width / 2) - ($padding * 3 / 2);
-    margin-left: $margin-inner;
-    margin-right: $margin-outer;
-}
-
-#description {
-    background-color: $background-color;
-    width: 100% - $padding * 2;
-    padding: $padding;
-    margin-top: $padding;
-}
-
-.element {
-    border: 1px solid $border-color;
-}
-
-p {
-    margin-top: 0;
-}
-
-#form {
-    background-color: $background-color;
-    width: 100% - $padding * 2;
-    padding: $padding;
-    margin-top: $padding;
-    margin-bottom: $padding;
-}
-
-#results {
-    background-color: $background-color;
-    transition: opacity 300ms ease-in;
-    width: 100% - $padding * 2;
-    padding: $padding;
-    margin-top: $padding;
-    margin-bottom: $padding;
-    p {
-        margin: 0;
+    margin-top: -63px;
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 25%;
+    background-color: $sidebar-color;
+    padding: 20px;
+    h3 {
+        margin-top: 0;
+    }
+    h4 {
+        margin-bottom: 0;
     }
 }
+
+#test {
+    position: relative;
+}
+
+.collapsible {
+    width: 75%;
+}
+
+.collapsible-element {
+    margin: 0 20px;
+    background-color: $collapsible-color;
+    color: $collapsible-text-color;
+    padding: 20px;
+    border-radius: 10px 0 100px 0;
+    margin-bottom: 20px;
+    p, h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    p:last-child {
+        margin-bottom: 10px;
+    }
+    .close {
+        position: relative;
+        float: right;
+        border: 0;
+        cursor: pointer;
+        border-radius: 4px;
+        height: 28px;
+        width: 28px;
+        font-size: 3em;
+        background-color: $sidebar-color;
+        margin-left: 20px;
+        &:before, &:after {
+            top: 0;
+            position: absolute;
+            left: 13px;
+            content: ' ';
+            height: 28px;
+            width: 2px;
+            background-color: $collapsible-color;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+        &:hover {
+            background-color: gold;
+            &:before, &:after {
+                background-color: $collapsible-text-color;
+            }
+        }
+
+    }
+}
+
+#description, #form {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+// start of transition elements
 
 .alert-enter {
     opacity: 0;
@@ -123,19 +189,36 @@ p {
     transition: opacity 300ms, transform 300ms;
 }
 
+// end of transition elements
+
+@media (max-width:1200px){
+    .background-div {
+        width: 60%;
+    }
+    .sidebar {
+        margin-top: -63px;
+        position: relative;
+        float: right;
+        width: 40%;
+        height: auto;
+    }
+    .collapsible {
+        width: 60%;
+    }
+}
+
 @media (max-width:768px){
-    .container {
+    .background-div {
         width: 100%;
     }
-    .sidebar, .main {
-        width: 100% - $padding * 2;
-        margin-left: $padding / 2;
-        margin-right: $padding / 2;
-    }
-    #description {
+    .sidebar {
         margin-top: 0;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    #form {
-        margin-top: 0;
+    .collapsible {
+        width: 100%;
+        height: auto;
+        float: left;
     }
 }
