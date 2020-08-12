@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Recursive:wght@300");
 body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Recursive", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -58,12 +59,14 @@ code {
 }
 
 .background-div {
+  box-sizing: content-box;
   position: fixed;
   height: 100%;
   width: 75%;
   background-image: url("images/background.jpg");
   background-position: center;
   background-size: cover;
+  border-right: 500px solid #4D4755;
   z-index: -1;
 }
 
@@ -100,6 +103,7 @@ code {
 
 .collapsible {
   width: 75%;
+  font-family: "EB Garamond", serif;
 }
 
 .collapsible-element {

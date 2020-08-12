@@ -8,8 +8,9 @@ function Description(props) {
   return (
     <div class="sidebar-element" id="description">
       <h3>Welcome!</h3>
-      <p>This webpage is intended to calculate how many days (and minutes) you'll take reading a new book.</p>
-      <p>Reading has been found to be ...</p>
+      <p>This webpage is intended to calculate how many days (and minutes) you'll spend reading a new book.</p>
+      <p>Regular reading has been found to increase brain plasticity, emotional control, empathy as well as social skills.</p>
+      <p>Most CEOs spend the majority of their free time reading. Of a few known figures, Bill Gates, Warren Buffett and Elon Musk are known to spend exorbitant amounts of time reading both technical, fictional and non-fiction literature, among others.</p>
       <p>Reading performances taken from: http://www.readingsoft.com/</p>
     </div>
   );
@@ -156,7 +157,17 @@ function TestResult(props) {
   const wpm = Math.floor( 602 / (props.state.timer / 1000) * 60 );
   var line = '';
   if (wpm > 10000) {
-    line = 'Holy Guacamole! Either you have the reading capacity of a robot or you just clicked "stop timer" immediately after seeing it';
+    line = 'Holy Guacamole! Either you have the reading capacity of a robot or you just clicked "stop timer" immediately after seeing it.';
+  } else if (wpm <= 10000 ) {
+    line = 'Amazing! Your words-per-minute are faster than 90% of readers.';
+  } else if (wpm < 800) {
+    line = 'Fantastic! You are in the top 80% of readers in terms of words-per-minute.';
+  } else if (wpm < 600) {
+    line = 'Super! You can read faster than the average person.';
+  } else if (wpm < 400) {
+    line = 'Good! You can read fairly moderately.';
+  } else if (wpm < 250) {
+    line = 'Nice! You seem to take your time reading!';
   } else {
     line = 'Did you fall asleep?';
   }
@@ -172,7 +183,7 @@ function TestResult(props) {
         <p>Your reading efficiency is: { wpm } words per minute (wpm)</p>
         <p>{ line }</p>
         <p>See how you compare:</p>
-        Graph
+        ---Graph to be Inserted Later---
       </div>
   </CSSTransition>
   );

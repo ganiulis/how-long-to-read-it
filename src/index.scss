@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Recursive:wght@300");
+
 $sidebar-color: #4D4755;
 $text-color: white;
 $collapsible-text-color: #4D4755;
 $collapsible-color: #D7AC96;
 $button-color: green;
+$body-font: 'Recursive', sans-serif;
+$collapsible-font: 'EB Garamond', serif;
 
 body, html {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    font-family: $body-font;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
@@ -67,12 +69,14 @@ code {
 }
 
 .background-div {
+    box-sizing: content-box;
     position: fixed;
     height: 100%;
     width: 75%;
     background-image: url("images/background.jpg");
     background-position: center;
     background-size: cover;
+    border-right: 500px solid $sidebar-color;
     z-index: -1;
 }
 
@@ -109,6 +113,7 @@ code {
 
 .collapsible {
     width: 75%;
+    font-family: $collapsible-font;
 }
 
 .collapsible-element {
