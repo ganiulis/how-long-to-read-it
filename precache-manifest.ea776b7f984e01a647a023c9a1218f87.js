@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e3cd15d8e17795556dd085bb448fd73",
+    "revision": "6dbc495ba4a8fbfd14f974e4f6fdd090",
     "url": "/how-long-to-read-it/index.html"
   },
   {
-    "revision": "c1a3517cd3c46cfe283b",
+    "revision": "883bf13c2ecbec01383a",
     "url": "/how-long-to-read-it/static/css/main.a91790a4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/how-long-to-read-it/static/js/2.f0aa8577.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c1a3517cd3c46cfe283b",
-    "url": "/how-long-to-read-it/static/js/main.e4947518.chunk.js"
+    "revision": "883bf13c2ecbec01383a",
+    "url": "/how-long-to-read-it/static/js/main.c718e1a8.chunk.js"
   },
   {
     "revision": "13e5c7343c1ef0698bdd",
