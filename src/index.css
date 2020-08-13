@@ -18,7 +18,7 @@ body, html {
 }
 
 button, #submit {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.8);
   border: 0;
   font-size: 1.2em;
   cursor: pointer;
@@ -38,7 +38,6 @@ form {
   background-color: rgba(215, 172, 150, 0.2);
   border-radius: 0 10px 0 10px;
   padding-bottom: 50px;
-  font-size: 1.1em;
 }
 form hr {
   border-top: 2px solid white;
@@ -96,6 +95,41 @@ code {
 .sidebar h4 {
   margin-bottom: 0;
 }
+.sidebar .sidebar-element ul {
+  padding-left: 20px;
+}
+.sidebar .sidebar-element ul li a {
+  color: white;
+}
+.sidebar .sidebar-element ul li a:hover {
+  color: gold;
+}
+
+#social-menu {
+  margin-top: 20px;
+}
+#social-menu svg {
+  margin-bottom: 0;
+}
+
+.social, .social-collapsible {
+  margin-bottom: 10px;
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+}
+.social:hover, .social-collapsible:hover {
+  cursor: pointer;
+  fill: gold;
+}
+
+.social {
+  fill: white;
+}
+
+.social-collapsible {
+  fill: #4D4755;
+}
 
 #test {
   position: relative;
@@ -113,6 +147,9 @@ code {
   padding: 20px;
   border-radius: 10px 0 100px 0;
   margin-bottom: 20px;
+  -webkit-box-shadow: 2px 2px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 23px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 23px -5px rgba(0, 0, 0, 0.75);
 }
 .collapsible-element p, .collapsible-element h2 {
   margin-top: 0;
@@ -156,19 +193,19 @@ code {
 }
 
 #description, #form {
-  margin-left: 10px;
   margin-bottom: 20px;
 }
 
 .alert-enter {
   opacity: 0;
-  transform: scale(0.9);
+  transform-origin: top;
+  transform: scaleY(0.1);
 }
 
 .alert-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 200ms, transform 200ms;
 }
 
 .alert-exit {
@@ -203,10 +240,15 @@ code {
     width: 100%;
   }
 
+  .header {
+    background-color: #4D4755;
+  }
+
   .sidebar {
     margin-top: 0;
     width: 100%;
     margin-bottom: 20px;
+    border-bottom: 10px solid rgba(215, 172, 150, 0.2);
   }
 
   .collapsible {

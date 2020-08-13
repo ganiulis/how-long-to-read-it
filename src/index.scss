@@ -4,9 +4,17 @@ $sidebar-color: #4D4755;
 $text-color: white;
 $collapsible-text-color: #4D4755;
 $collapsible-color: #D7AC96;
-$button-color: green;
+$button-color: rgba(green, 0.8);
 $body-font: 'Recursive', sans-serif;
 $collapsible-font: 'EB Garamond', serif;
+
+$sidebar-wide-screen: 25%;
+$sidebar-mid-screen: 40%;
+$sidebar-small-screen: 100%;
+
+$collapsible-wide-screen: 100% - $sidebar-wide-screen;
+$collapsible-mid-screen: 100% - $sidebar-mid-screen;
+$collapsible-small-screen: 100%;
 
 body, html {
     margin: 0;
@@ -47,7 +55,6 @@ form {
     background-color: rgba($collapsible-color, 0.2);
     border-radius: 0 10px 0 10px;
     padding-bottom: 50px;
-    font-size: 1.1em;
     hr {
         border-top: 2px solid white;
         border-bottom: 0;
@@ -96,7 +103,7 @@ code {
     float: right;
     top: 0;
     right: 0;
-    width: 25%;
+    width: $sidebar-wide-screen;
     background-color: $sidebar-color;
     padding: 20px;
     h3 {
@@ -105,6 +112,43 @@ code {
     h4 {
         margin-bottom: 0;
     }
+    .sidebar-element {
+        ul {
+            padding-left: 20px;
+            li a {
+                color: white;
+                &:hover {
+                    color: gold;
+                }
+            }
+        }
+    }
+}
+
+#social-menu {
+    margin-top: 20px;
+    svg {
+        margin-bottom: 0;
+    }
+}
+
+.social, .social-collapsible {
+    margin-bottom: 10px;
+    height: 32px;
+    width: 32px;
+    background-size: 32px 32px;
+    &:hover {
+        cursor: pointer;
+        fill: gold;
+    }
+}
+
+.social {
+    fill: white;
+}
+
+.social-collapsible {
+    fill: $sidebar-color;
 }
 
 #test {
@@ -112,7 +156,7 @@ code {
 }
 
 .collapsible {
-    width: 75%;
+    width: $collapsible-wide-screen;
     font-family: $collapsible-font;
 }
 
@@ -123,6 +167,9 @@ code {
     padding: 20px;
     border-radius: 10px 0 100px 0;
     margin-bottom: 20px;
+    -webkit-box-shadow: 2px 2px 23px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 23px -5px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 23px -5px rgba(0,0,0,0.75);
     p, h2 {
         margin-top: 0;
         margin-bottom: 20px;
@@ -167,7 +214,6 @@ code {
 }
 
 #description, #form {
-    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -175,13 +221,14 @@ code {
 
 .alert-enter {
     opacity: 0;
-    transform: scale(0.9);
+    transform-origin: top;
+    transform: scaleY(0.1);
 }
 
 .alert-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
+    transition: opacity 200ms, transform 200ms;
 }
 
 .alert-exit {
@@ -204,11 +251,11 @@ code {
         margin-top: -63px;
         position: relative;
         float: right;
-        width: 40%;
+        width: $sidebar-mid-screen;
         height: auto;
     }
     .collapsible {
-        width: 60%;
+        width: $collapsible-mid-screen;
     }
 }
 
@@ -216,13 +263,17 @@ code {
     .background-div {
         width: 100%;
     }
+    .header {
+        background-color: $sidebar-color;
+    }
     .sidebar {
         margin-top: 0;
-        width: 100%;
+        width: $sidebar-small-screen;
         margin-bottom: 20px;
+        border-bottom: 10px solid rgba($collapsible-color, 0.2);
     }
     .collapsible {
-        width: 100%;
+        width: $collapsible-small-screen;
         height: auto;
         float: left;
     }
